@@ -1,5 +1,7 @@
-function _findNaughtyStep(original: string, modified: string) {
+export function _findNaughtyStep(original: string, modified: string) {
 
+  if( !modified ) throw new Error('Invalid input');
+  if( Math.abs(original.length - modified.length) > 1 ) throw new Error('Invalid input');
   if( original === modified ) return '';
 
   if( modified.length > original.length ) {
@@ -12,24 +14,3 @@ function _findNaughtyStep(original: string, modified: string) {
     }
   }
 }
-
-
-const _original = 'abcd'
-const _modified = 'abcde'
-console.log( _findNaughtyStep(_original, _modified) ); // 'e'
-
-const _original2 = 'stepfor'
-const _modified2 = 'stepor'
-console.log(_findNaughtyStep(_original2, _modified2) ); // 'f'
-
-const _original3 = 'abcde'
-const _modified3 = 'abcde'
-console.log(_findNaughtyStep(_original3, _modified3)); // ''
-
-const _original4 = ''
-const _modified4 = ''
-console.log(_findNaughtyStep(_original4, _modified4)); // ''
-
-const _original5 = 'aaaa'
-const _modified5 = 'aaaaa'
-console.log(_findNaughtyStep(_original5, _modified5)); // 'f'
