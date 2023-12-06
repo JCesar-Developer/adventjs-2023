@@ -30,4 +30,4 @@ console.log(firstRepeatedId3) // 5
 
 ### --- Mejor resultado ---
 
-![challenge-1-result](best-result.jpg)
+![challenge-1-result](./best-result.jpg)

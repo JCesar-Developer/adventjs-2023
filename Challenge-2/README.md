@@ -33,4 +33,4 @@ manufacture(gifts, materials) // []
 
 ### --- Mejor resultado ---
 
-![challenge-1-result](best-result.jpg)
+![challenge-1-result](./best-result.jpg)
