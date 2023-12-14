@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { adjustLights } from './solution-1';
+import { adjustLights } from './solution-2';
 
 describe('Challenge 5', () => {
 

@@ -1,6 +1,6 @@
 # DÍA [n]:
 
-### --- Instrucciones ---
+## Instrucciones
 
 Por ejemplo:
 
@@ -10,10 +10,7 @@ Por ejemplo:
 
 A tener en cuenta:
 
-### --- Solución ---
-
-- **Paso 1:** 
-- **Paso 2:**
+## Solución
 
 ~~~typescript
 

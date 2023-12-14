@@ -1,6 +1,6 @@
 # DAY 2: Ponemos en marcha la fábrica
 
-### --- Instrucciones ---
+## Instrucciones
 
 En el taller de Santa, los elfos tienen una **lista de regalos** que desean fabricar y un conjunto limitado de materiales.
 
@@ -30,7 +30,7 @@ const materials = 'psli'
 manufacture(gifts, materials) // []
 ~~~
 
-### --- Solución ---
+## Solución
 
 Utilizaremos el método `filter` para devolver los juguetes que pueden ser creados. Si ninguno puede ser creado, se devolverá un arreglo vacio.
 La función `every` nos retornará un booleano si todos los caracteres del juguete analizado están includos en el material. Si están incluidos, el juguete puede crearse, si no están incluidos, el juguete no se podrá crear.

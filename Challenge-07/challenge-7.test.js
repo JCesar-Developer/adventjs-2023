@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { drawGift } from './solution-3';
+import { drawGift } from './solution-2';
 
 const result1 = 
 ` ##

@@ -107,3 +107,9 @@ PASAR A CANVA - Estrategias geniales:
 - Recuperar un elemento random de un arreglo: array[Math.floor(Math.random() * array.length)];
 - Filtrar números únicos de un arreglo: [...new Set(arreglo)];
 ~~~
+
+## OTROS PUBLICADORES DEL ADVENT JS
+- [Ferniuz](https://dev.to/fenriuz)
+- [DPortillo23](https://github.com/dportillo23/adventjs-2023/tree/master)
+- [Achalogy](https://github.com/Achalogy/advent-js-2023/tree/main)
+- [SantiMendez19](https://github.com/SantiMenendez19/adventjs/tree/main/2023)

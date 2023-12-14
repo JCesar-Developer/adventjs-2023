@@ -1,6 +1,6 @@
 # DAY 1: ¡Primer regalo repetido!
 
-### --- Instrucciones ---
+## Instrucciones
 
 En la fábrica de juguetes del Polo Norte, cada juguete tiene un número de identificación único. Sin embargo, debido a un error en la máquina de juguetes, algunos números se han asignado a más de un juguete.
 
@@ -27,7 +27,7 @@ const firstRepeatedId3 = findFirstRepeated(giftIds3)
 console.log(firstRepeatedId3) // 5
 ~~~
 
-### --- Solución ---
+## Solución
 
 Con ayuda del método `filter`, crearemos un array con todos los elementos que se repiten en dentro del arreglo, esto lo conseguimo apuntando a que el espacio de memoria del elemento iterado, no sea igual al indice del iterador. 
 

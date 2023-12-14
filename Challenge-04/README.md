@@ -1,6 +1,6 @@
 # DÍA 4: Dale la vuelta a los paréntesis
 
-### --- Instrucciones ---
+## Instrucciones
 
 En el taller de Santa 🎅, algunos mensajes navideños han sido escritos de manera peculiar: **las letras dentro de los paréntesis deben ser leídas al revés.**
 
@@ -32,7 +32,7 @@ A tener en cuenta:
 - En el mensaje final no deben quedar paréntesis.
 - El nivel máximo de anidamiento es 2.
 
-### --- Solución ---
+## Solución
 
 **Paso 1:** Se utiliza la expresión regular '/\(\w*\)/g' para encontrar todos los caracteres dentro de los paréntesis incluidos los paréntesis.
 **Paso 2:** Se crea el ciclo 'while', el cual estará activo siempre que en el mensaje existan elementos paréntesis con o sin elementos dentro.

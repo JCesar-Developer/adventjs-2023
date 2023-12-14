@@ -1,6 +1,6 @@
 # DÍA 6: Los renos a prueba
 
-### --- Instrucciones ---
+## Instrucciones
 
 Los elfos están catalogando los renos de Santa 🦌 según la distancia que pueden recorrer.
 
@@ -35,6 +35,36 @@ console.log(result3) // -> 5
 A tener en cuenta:
 
 Ten en cuenta que no importa si es a la izquierda o la derecha, la distancia es **el valor absoluto de la distancia recorrida máxima al finalizar los movimientos.**
+
+## Solución
+
+~~~typescript
+export function maxDistance(movements: string) {
+  let distance: number = 0;
+  let asterisk: number = 0;
+
+  //Se itera por cada caracter dentro del string.
+  for (const move of movements) {
+    switch( move ) {
+      //si el movimiento es '<' se resta 1 a la distancia
+      case '<': 
+        distance -= 1;
+        break;
+      //si el movimiento es '>' se suma 1 a la distancia
+      case '>':
+        distance += 1;
+        break;
+      //Por cada '*' se suma 1 a la variable asterisk.
+      case '*': 
+        asterisk++;
+        break;
+    } 
+  }
+  
+  //Se devuelve el valor absoluto de la distancia + total de asteriscos.
+  return Math.abs(distance) + asterisk;
+}
+~~~
 
 ### --- Mejor resultado ---
 

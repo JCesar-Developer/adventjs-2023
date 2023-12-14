@@ -1,6 +1,6 @@
 # DÍA 3: El elfo travieso
 
-### --- Instrucciones ---
+## Instrucciones
 
 En el taller de Santa, **un elfo travieso** ha estado jugando en la cadena de fabricación de regalos, añadiendo o eliminando un paso no planificado.
 
@@ -30,7 +30,7 @@ A tener en cuenta:
 - La modificación puede ocurrir en cualquier lugar de la cadena.
 - La secuencia original puede estar vacía
 
-### --- Solución ---
+## Solución
 
 Si las palabras son iguales, no hará falta recorrer el algoritmo. Por el contrario, si son diferentes, primero obtendremos el tamaño de la palabra más grande. Y ayudándonos del bucle `for` procederemos a comparar los índices de cada palabra.
 

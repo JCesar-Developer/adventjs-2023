@@ -1,5 +1,5 @@
 //La logica es, solo puden haber dos resultados correctos, comparemos ambas posibilidades y escogemos la que requiera el menor número de cambios.
-function adjustLights(lights: string[]) {
+function _adjustLights(lights: string[]) {
   const op1: string [] = lights.map((_, i) => ['🟢', '🔴'][i%2] ) 
   const op2: string [] = lights.map((_, i) => ['🔴', '🟢'][i%2] ) 
 

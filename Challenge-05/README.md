@@ -1,6 +1,6 @@
 # DÍA 5: El CyberTruck de Santa 
 
-### --- Instrucciones ---
+## Instrucciones
 
 Santa 🎅 está probando su nuevo trineo eléctrico, el CyberReindeer, en una carretera del Polo Norte. La carretera se representa con una cadena de caracteres, donde:
 
@@ -48,7 +48,7 @@ Ten en cuenta que **si el trineo está en la misma posición que una barrera,** 
 
 Los elfos se inspiraron en este [reto de Code Wars.](https://www.codewars.com/kata/5d0ae91acac0a50232e8a547/javascript)
 
-### --- Solución ---
+## Solución
 
 - **Paso 1:** Re-asignamos la variable road, dejando la pista limpia (sin Santa). Luego declaramos las variables `steps` donde iremos acumulando el recorrido de Santa y `position`, donde almacenaremos la posición de Santa durante el recorrido. 
 - **Paso 2:** Con el bucle `for`, vamos iterando sobre el tiempo de la prueba. Aquí se aplican las condicionales correspondientes al ejercicio:  
