@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { cyberReindeer } from './solution-3';
+import { cyberReindeer } from './solution-2';
 
 describe('Challenge 5', () => {
 

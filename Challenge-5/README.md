@@ -48,6 +48,40 @@ Ten en cuenta que **si el trineo está en la misma posición que una barrera,** 
 
 Los elfos se inspiraron en este [reto de Code Wars.](https://www.codewars.com/kata/5d0ae91acac0a50232e8a547/javascript)
 
+### --- Solución ---
+
+- **Paso 1:** Re-asignamos la variable road, dejando la pista limpia (sin Santa). Luego declaramos las variables `steps` donde iremos acumulando el recorrido de Santa y `position`, donde almacenaremos la posición de Santa durante el recorrido. 
+- **Paso 2:** Con el bucle `for`, vamos iterando sobre el tiempo de la prueba. Aquí se aplican las condicionales correspondientes al ejercicio:  
+  - **Paso 2.1:** Si el tiempo es 5: todos los `|` se cambian por `*`
+  - **Paso 2.3:** Por cada iteración se almacena el recorrido de Santa correspondiente a su posición. (Destructuramos road, asignamos la posición y volvemos a juntar road en un string, para despues almacenarlo en el array steps).
+  - **Paso 2.3:** Si la posición delante de Santa no es `|`, podrá avanzar su posición en la siguiente iteración.
+- **Paso 3:** Finalmente devolvemos los `steps` recorridos.
+
+~~~typescript
+export function cyberReindeer(road: string, time: number) {
+  road = '.' + road.substring(1);
+  const steps: string[] = [];
+  let position: number = 0;
+
+  for (let i = 0; i < time; i++) {  
+    if (i === 5) {
+      road = road.replace(/\|/g, '*');
+      position++;
+    }
+
+    const patron = [...road];
+    patron[position] = 'S';
+    steps.push(patron.join(''));
+
+    if (patron[position + 1] !== '|') {
+      position++;
+    }
+  }
+
+  return steps;
+}
+~~~
+
 ### --- Mejor resultado ---
 
 ![challenge-1-result](best-result.JPG)

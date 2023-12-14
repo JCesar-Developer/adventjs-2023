@@ -1,16 +1,15 @@
 //La logica es, solo puden haber dos resultados correctos, comparemos ambas posibilidades y escogemos la que requiera el menor número de cambios.
-export function adjustLights(lights) {
-  const patron1 = Array(lights.length).fill("🔴").map((v,i)=>i%2?"🟢":v)
-  const patron2 = Array(lights.length).fill("🟢").map((v,i)=>i%2?"🔴":v)
+function adjustLights(lights: string[]) {
+  const op1: string [] = lights.map((_, i) => ['🟢', '🔴'][i%2] ) 
+  const op2: string [] = lights.map((_, i) => ['🔴', '🟢'][i%2] ) 
 
-  let c1 = 0
-  let c2 = 0
-  lights.forEach((v,i)=>{    
-    if (v!==patron1.at(i)){
-      c1++
-    } else if (v!==patron2.at(i)){
-      c2++
-    }
+  let changes1: number = 0;
+  let changes2: number = 0;
+  
+  lights.forEach((light, i) => {
+    if(light !== op1[i]) changes1++;
+    if(light !== op2[i]) changes2++;
   })
-  return c1<c2? c1: c2
+  
+  return Math.min(changes1, changes2)
 }

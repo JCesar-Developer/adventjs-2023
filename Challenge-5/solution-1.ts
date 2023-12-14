@@ -1,4 +1,4 @@
-export function cyberReindeer(road: string, time: number) {
+function _cyberReindeer(road: string, time: number) {
   if (!Number.isInteger(time)) throw new Error('Invalid input: "time" should be an integer');
   if (time < 1) throw new Error('Invalid input: "time" should be greater than or equal to 1');
   if (typeof road !== 'string') throw new Error('Invalid input: "road" should be a string');

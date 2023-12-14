@@ -1,4 +1,4 @@
-export function findFirstRepeated (gifts: number[]): number {
+function __findFirstRepeated (gifts: number[]): number {
   if( typeof gifts !== 'object' ) throw new Error('parameter provided must be a number');
   if( gifts.length <= 1 ) return -1;
 

@@ -10,7 +10,7 @@ Un regalo se puede fabricar si contamos con todos los materiales necesarios para
 
 Por ejemplo:
 
-~~~
+~~~javascript
 const gifts = ['tren', 'oso', 'pelota']
 const materials = 'tronesa'
 
@@ -30,6 +30,19 @@ const materials = 'psli'
 manufacture(gifts, materials) // []
 ~~~
 
+### --- Solución ---
+
+Utilizaremos el método `filter` para devolver los juguetes que pueden ser creados. Si ninguno puede ser creado, se devolverá un arreglo vacio.
+La función `every` nos retornará un booleano si todos los caracteres del juguete analizado están includos en el material. Si están incluidos, el juguete puede crearse, si no están incluidos, el juguete no se podrá crear.
+
+
+~~~typescript
+export function manufacture(gifts: string[], materials: string): string[] {
+  return gifts.filter(gift => 
+    [...gift].every(character => materials.includes(character))
+  );
+}
+~~~
 
 ### --- Mejor resultado ---
 

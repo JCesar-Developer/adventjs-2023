@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { findFirstRepeated } from './solution-2';
+import { findFirstRepeated } from './solution-4';
 
 describe('Challenge 1', () => {
   it('Should throw if not an array of numbers is provided as parameter', () => {

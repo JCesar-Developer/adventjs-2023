@@ -7,7 +7,7 @@ describe('Challenge 2', () => {
     expect( () => manufacture() ).toThrow();
   });
 
-  it('Should throw if the second parameter is empty', () => {
+  it('Should throw if the second parameter is invalid input', () => {
     expect( () => manufacture(['tren'], '') ).toThrow();
     expect( () => manufacture(['tren'], {}) ).toThrow();
     expect( () => manufacture(['tren'], null) ).toThrow();

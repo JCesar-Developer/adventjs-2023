@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { decode } from './solution-1'
+import { decode } from './solution-2'
 
 describe('Challenge 4 - decode', () => {
 
@@ -47,6 +47,8 @@ describe('Challenge 4 - decode', () => {
 
   it('8. Corner cases', () => {
     expect(decode( '(())' )).toBe('');
+    expect(decode( '(at()nas)' )).toBe('santa');
+    expect(decode( '()(at()nas)()' )).toBe('santa');
     expect(decode( '(su(la)ca(nt)as)' )).toBe('santaclaus');
     expect(decode( 's(a(nt)a)c(s(au)l)!' )).toBe('santaclaus!');
     expect(decode( 's(a(nt)a) c(s(au)l)!' )).toBe('santa claus!');
@@ -54,11 +56,5 @@ describe('Challenge 4 - decode', () => {
     expect(decode( '((ta)(an)s) ((us)(la)c)!' )).toBe('santa claus!');
     expect(decode( '*(h(fg)(de)(bc)a)* *(i(fg)(de)(bc)a)*' )).toBe('*abcdefgh* *abcdefgi*');
   })
-
-  //it('9. When the nesting max level is two', () => {
-  //  expect(decode( '(f(b(dc)e)a)' )).toBe('abcdef');
-  //  expect(decode( '(i(b(dc)e(gf)h)a)' )).toBe('abcdefghi');
-  //  expect(decode( '(f(b(dc)e)a)(f(b(dc)e)a)' )).toBe('abcdefabcdef');
-  //})
 
 })
