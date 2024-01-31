@@ -11,7 +11,7 @@ function getIndexsForPalindrome(word: string): number[] {
     return charArray.join('');
   }
 
-  let resp: number[] = null;
+  let resp: number[] = [];
 
   for(let i = 0; i < word.length; i++){
     for(let j = 0; j < word.length; j++) {

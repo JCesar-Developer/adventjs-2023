@@ -42,6 +42,6 @@ export function findFirstRepeated(gifts: number[]): number {
 }
 ~~~
 
-### --- Mejor resultado ---
+## Mejor resultado
 
 ![challenge-1-result](best-result.JPG)

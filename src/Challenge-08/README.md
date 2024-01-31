@@ -54,6 +54,6 @@ export function organizeGifts(gifts: string) {
 }
 ~~~
 
-### --- Mejor resultado ---
+## Mejor resultado
 
-![challenge-1-result](best-result.JPG)
+![challenge-8-result](best-result.JPG)

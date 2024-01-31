@@ -82,6 +82,6 @@ export function cyberReindeer(road: string, time: number) {
 }
 ~~~
 
-### --- Mejor resultado ---
+## Mejor resultado
 
-![challenge-1-result](best-result.JPG)
+![challenge-5-result](best-result.JPG)

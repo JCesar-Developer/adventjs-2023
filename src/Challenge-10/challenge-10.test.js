@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import createChristmasTree from './solution-1';
+import createChristmasTree from './solution-2';
 
 const tree1 =
 `  x

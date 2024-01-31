@@ -36,9 +36,36 @@ Debemos devolver un string multilínea con el árbol de Navidad formado con los 
 ## Solución
 
 ~~~typescript
-
+/** @Score 270puntos */
+function createChristmasTree(ornaments: string, height: number): string {
+  let currentHeight: number = 0;
+  let i: number = 0;
+  let tree: string = ''  
+  
+  // Bucle principal que construye cada fila del árbol
+  while( currentHeight < height) {
+    let rowSize: number = 0;
+    let row: string = '';
+    
+    // Bucle interno que construye cada adorno de la fila
+    while( rowSize <= currentHeight) {
+      row += ornaments[i % ornaments.length] + ' ';
+      rowSize++;
+      i++;
+    }
+    
+    // Agrega espacio en blanco al principio de la fila
+    row = ' '.repeat(height - currentHeight - 1) + row;
+    // Corta último espacio en blanco y agrega salto de linea
+    tree += row.slice(0, -1) + '\n'
+    currentHeight++;
+  }
+  
+  // Agrega la base del tronco del árbol y último salto de linea
+  return tree + ' '.repeat(height - 1) + '|\n' ;
+}
 ~~~
 
-### Mejor resultado
+## Mejor resultado
 
-![challenge-1-result](best-result.JPG)
+![challenge-10-result](best-result.JPG)

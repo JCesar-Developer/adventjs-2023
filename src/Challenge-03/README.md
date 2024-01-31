@@ -50,6 +50,6 @@ export function findNaughtyStep(original: string, modified: string) {
 }
 ~~~
 
-### --- Mejor resultado ---
+## Mejor resultado
 
-![challenge-1-result](best-result.JPG)
+![challenge-3-result](best-result.JPG)

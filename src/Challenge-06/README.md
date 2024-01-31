@@ -66,6 +66,6 @@ export function maxDistance(movements: string) {
 }
 ~~~
 
-### --- Mejor resultado ---
+## Mejor resultado
 
-![challenge-1-result](best-result.JPG)
+![challenge-6-result](best-result.JPG)

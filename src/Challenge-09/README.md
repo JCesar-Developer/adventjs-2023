@@ -48,6 +48,6 @@ export function adjustLights(lights: string[]) {
 }
 ~~~
 
-### --- Mejor resultado ---
+## Mejor resultado
 
-![challenge-1-result](best-result.JPG)
+![challenge-9-result](best-result.JPG)

@@ -94,6 +94,6 @@ export function drawGift(size: number, symbol: string) {
 }
 ~~~
 
-### --- Mejor resultado ---
+## Mejor resultado
 
-![challenge-1-result](best-result.JPG)
+![challenge-7-result](best-result.JPG)
